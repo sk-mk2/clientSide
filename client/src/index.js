@@ -5,7 +5,7 @@ import clock from './clock.js';
 import time from './displayDate.js';
 function component() {
     const element = document.createElement('div');
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+    element.innerHTML = _.join(['Hello', 'webpack','hogera'], ' ');
     return element;
 }
 document.body.appendChild(component());

@@ -5,13 +5,15 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx webpack --config webpack.config.js && google-chrome index.html"
+    "build": "webpack",
+    "start": "webpack-dev-server"
   },
   "keywords": [],
-  "author": "",
+  "author": "sk-mk2",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^4.6.0",
-    "webpack-cli": "^2.0.15"
+    "webpack-cli": "^2.1.2",
+    "webpack-dev-server": "^3.1.3"
   }
 }
