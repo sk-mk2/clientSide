@@ -1,8 +1,14 @@
-'use strict';
 
-import _ from 'lodash';
-import clock from './clock.js';
-import time from './displayDate.js';
+
+document.addEventListener('DOMContentLoaded',init);
+function init(){
+'use strict';
+const _ = require('lodash');
+require('./clock.js');
+require('./shake.js');
+require('./displayDate.js');
+require('./tableSort.js');
+require('./reverse.js');
 function component() {
     const element = document.createElement('div');
     element.innerHTML = JSON.stringify(urlArgs());
@@ -10,7 +16,6 @@ function component() {
     return element;
 }
 document.body.appendChild(component());
-console.log(document.getElementById('clock'));
 //Locationオブジェクトのsearchプロパティにはクエリ文字列が入っている
 function urlArgs() {
     const args = {};
@@ -50,3 +55,11 @@ function spark(){
     }
 }
 
+//指定したURLからスクリプトを非同期的に読み込み実行する。
+function loadasync(url){
+    const head = document.getElementsByTagName('head')[0];
+    const s = document.createElement('script');
+    s.src = url;
+    head.appendChild(s);
+}
+}
