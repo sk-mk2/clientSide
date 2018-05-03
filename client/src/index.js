@@ -9,13 +9,16 @@ require('./shake.js');
 require('./displayDate.js');
 require('./tableSort.js');
 require('./reverse.js');
+require('./httpApi.js');
+require('./chat.js');
+require('./jquery.js');
 function component() {
     const element = document.createElement('div');
     element.innerHTML = JSON.stringify(urlArgs());
     element.innerHTML += _.join(['<p>',JSON.stringify(location)]);
     return element;
 }
-document.body.appendChild(component());
+//document.body.appendChild(component());
 //Locationオブジェクトのsearchプロパティにはクエリ文字列が入っている
 function urlArgs() {
     const args = {};
