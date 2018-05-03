@@ -1,7 +1,7 @@
 
 
-document.addEventListener('DOMContentLoaded',init);
-function init(){
+//ページ遷移時確認するやつ
+//window.addEventListener('beforeunload',e => e.returnValue = 'とんでいい？',false);
 'use strict';
 const _ = require('lodash');
 require('./clock.js');
@@ -62,4 +62,6 @@ function loadasync(url){
     s.src = url;
     head.appendChild(s);
 }
-}
+//messageイベント大事そう
+//バージョン古いIE害悪
+//イベントバブリングについての理解
