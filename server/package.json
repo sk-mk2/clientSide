@@ -12,5 +12,8 @@
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^5.2.0",
     "power-assert": "^1.5.0"
+  },
+  "dependencies": {
+    "formidable": "^1.2.1"
   }
 }

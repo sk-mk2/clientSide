@@ -10,7 +10,7 @@ describe('local module',()=>{
         });
 
         it('引数に応じて決まった文字列を返すこと(fail)',()=>{
-            assert(localmodule.helloSync('tardddo') === 'Hello taro');
+            assert(localmodule.helloSync('taro') === 'Hello taro');
         });
     });
 
