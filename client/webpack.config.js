@@ -1,9 +1,12 @@
 const path = require('path');
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        bundle:'./src/jsDefinitive/index.js',
+        ninja:'./src/ninja/index.js'
+    },
     output: {
-        filename: 'bundle.js',
+        filename: '[name].js',
         path: path.resolve(__dirname, 'dist')
     },
     //developmentはソースマップ有効 productionは最適化
