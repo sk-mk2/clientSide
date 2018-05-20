@@ -7,6 +7,12 @@
     },
     "extends": "eslint:recommended",
     "parserOptions": {
+<<<<<<< HEAD
+=======
+        "ecmaFeatures": {
+            "jsx": true
+        },
+>>>>>>> ea849cff7e63fa9f9d07006a95729f41e1e718e6
         "sourceType": "module"
     },
     "rules": {
